@@ -1,0 +1,86 @@
+"Command of Moving to Work Directory"
+cd /home/zmp/proj/RoboCar110_Ver2/OpenCV/capture
+
+"Command of Compile C++File"
+g++ -o client1 client1.cpp -lzmq  -I /usr/local/include -L /usr/local/lib -I/usr/local/include/opencv2 -I/usr/local/include/opencv -L/usr/local/lib/ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -I/usr/local/include/zmp/rc110_v2 -L/usr/local/lib/zmp/rc110_v2 -lBaseboard -lRcControl -lpthread -std=c++11
+
+g++ -o client2 client2.cpp -lzmq  -I /usr/local/include -L /usr/local/lib -I/usr/local/include/opencv2 -I/usr/local/include/opencv -L/usr/local/lib/ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -I/usr/local/include/zmp/rc110_v2 -L/usr/local/lib/zmp/rc110_v2 -lBaseboard -lRcControl -lpthread -std=c++11
+
+g++ -o client12 client12.cpp -lzmq  -I /usr/local/include -L /usr/local/lib -I/usr/local/include/opencv2 -I/usr/local/include/opencv -L/usr/local/lib/ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -I/usr/local/include/zmp/rc110_v2 -L/usr/local/lib/zmp/rc110_v2 -lBaseboard -lRcControl -lpthread -std=c++11
+
+g++ -o radicon radicon.cpp -lzmq  -I /usr/local/include -L /usr/local/lib -I/usr/local/include/opencv2 -I/usr/local/include/opencv -L/usr/local/lib/ -lopencv_core -lopencv_highgui -lopencv_imgproc -lopencv_videoio -lopencv_imgcodecs -I/usr/local/include/zmp/rc110_v2 -L/usr/local/lib/zmp/rc110_v2 -lBaseboard -lRcControl -lpthread -std=c++11
+
+Inside of ~/.bash_profile
+export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_PATH="$PYENV_ROOT/bin:$PYENV_PATH"
+eval "$(pyenv init -)"
+export PYENV_PATH="$PYENV_ROOT/versions/anaconda2-5.0.1/bin:$PYENV_PATH"
+
+
+switch(action)
+{
+  case 0:
+    _RcControl.SetSteerAngle(-30);
+    break;
+  case 1:
+    _RcControl.SetSteerAngle(-25);
+    break;
+  case 2:
+    _RcControl.SetSteerAngle(-20);
+    break;
+  case 3:
+    _RcControl.SetSteerAngle(-15);
+    break;
+  case 4:
+    _RcControl.SetSteerAngle(-10);
+    break;
+  case 5:
+    _RcControl.SetSteerAngle(-5);
+    break;
+  case 6:
+    _RcControl.SetSteerAngle(0);
+    break;
+  case 7:
+    _RcControl.SetSteerAngle(5);
+    break;
+  case 8:
+    _RcControl.SetSteerAngle(10);
+    break;
+  case 9:
+    _RcControl.SetSteerAngle(15);
+    break;
+  case 10:
+    _RcControl.SetSteerAngle(20);
+    break;
+  case 11:
+    _RcControl.SetSteerAngle(25);
+    break;
+  case 12:
+    _RcControl.SetSteerAngle(30);
+    break;
+}
+
+switch(action)
+{
+  case 0:
+    _RcControl.SetSteerAngle(-30);
+    break;
+  case 1:
+    _RcControl.SetSteerAngle(-20);
+    break;
+  case 2:
+    _RcControl.SetSteerAngle(-5);
+    break;
+  case 3:
+    _RcControl.SetSteerAngle(0);
+    break;
+  case 4:
+    _RcControl.SetSteerAngle(5);
+    break;
+  case 5:
+    _RcControl.SetSteerAngle(20);
+    break;
+  case 6:
+    _RcControl.SetSteerAngle(30);
+    break;
+}
